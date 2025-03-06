@@ -1,0 +1,882 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/HopeBot_Logo-2.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/HopeBot_Logo-5.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/HopeBot_Logo-3.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/HopeBot_Logo-4.png">
+  <meta name="author" content="Ritesh Kumar">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>HopeBot</title>
+  <link rel="stylesheet" href="theme.min.css">
+
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="/">
+      <img src="./img/HopeBot_Logo-4.png" alt="HopeBot Logo" width="32" height="32">
+
+  <span class="ms-1 fw-bolder">HopeBot</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="#hero" aria-label="Brings you to the frontpage">
+      Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#numbers">
+      Problem
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#aboutus">
+      About us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#gallery">
+      Gallery
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#testimonials">
+      Team
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#workwithus">
+      Contact us
+    </a>
+  </li>
+
+    </ul>
+      <a href="/LoginPage/index.html" data-splitbee-event="Click" aria-label="Go to HopeBot" class="link-dark pb-1 link-fancy me-2">
+        Continue to HopeBot
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <!-- Bot Head -->
+          <rect x="5" y="7" width="14" height="10" rx="3" ry="3" stroke="black" stroke-width="1" fill="white"/>
+          
+          <!-- Bot Eyes -->
+          <circle cx="9" cy="12" r="1.2" fill="black"/>
+          <circle cx="15" cy="12" r="1.2" fill="black"/>
+          
+          <!-- Bot Antenna -->
+          <line x1="12" y1="3" x2="12" y2="7" stroke="black" stroke-width="2"/>
+          <circle cx="12" cy="3" r="1.2" fill="black"/>
+          
+          <!-- Bot Mouth -->
+          <rect x="9" y="14" width="6" height="1" rx="0.5" fill="black"/>
+          
+          <!-- Base (like a chatbot screen) -->
+          <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2" fill="none" stroke="black" stroke-width="1"/>
+      </svg>
+      
+      </a>
+
+    </div>
+</div>
+</nav>
+
+    <main>
+      <div class="w-100 overflow-hidden bg-gray-100" id="top">
+  
+<div class="container position-relative">
+  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/Images/ChatBot_BG.jpg);">
+    
+  </div>
+    <div class="row">
+
+<div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right" id="hero">
+  <h1 class="display-1 fw-bold mt-5">HopeBot : Because you're Never Alone.</h1>
+  <p class="lead">Strugling with stress, anxiety or a tough phase in life ?<br> Our HopeBot will help you.</p>
+  <a href="/LoginPage/index.html" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Get Support Now</a>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<div class="py-vh-5 w-100 overflow-hidden" id="numbers">
+  <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-5">
+    <h3 class="py-5 border-top border-dark" data-aos="fade-right">How big the problem is </h3>
+</div>
+<div class="col-lg-6">
+  <div class="row">
+    <div class="col-12">
+    <h2 class="display-6 mb-5" data-aos="fade-down">Mental health affects millions worldwide these numbers aren’t just stats, they’re real lives.</h2>
+    </div>
+    <div class="col-lg-6" data-aos="fade-up">
+      <div class="display-1 fw-bold py-4">4 B</div>
+      <p class="text-black-50">Approximately 50% of the global population, or 4 billion people, will experience a mental health disorder in their lifetime. However, less than 50% receive necessary care. <br><br>Reference: World Health Organization (WHO).</p>
+    </div>
+    <div class="col-lg-6" data-aos="fade-up">
+      <div class="display-1 fw-bold py-4">1 in 8</div>
+      <p class="text-black-50">Worldwide, roughly 970 million people experience mental health conditions, with 14% of India's population affected. Suicide is the second leading cause of death among 15-29-year-olds. <br><br> References: WHO; National Mental Health Survey of India.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="services">
+  <div class="container">
+      
+<div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/Images/h2.jpg);--bs-aspect-ratio: 50%;">
+      </div>
+    </div>
+    <div class="col-md-5 offset-md-1">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/Images/h1.jpg);">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/Health.jpeg);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4">
+  <h3 class="py-5 border-top border-dark" data-aos="fade-left">Understanding Mental Health</h3>
+  <p data-aos="fade-left" data-aos-delay="200">Mental health challenges affect millions, often going unnoticed. Here are some common struggles : <br> 
+    <br>
+
+    <strong>Anxiety & Stress</strong> – Constant worry, restlessness, and feeling overwhelmed. <br>
+    <strong>Depression</strong> – Loss of interest, fatigue, and persistent sadness. <br>
+    <strong>PTSD & Trauma</strong> – Flashbacks, nightmares, and emotional distress. <br>
+    <strong>Bipolar Disorder</strong> – Intense mood shifts from extreme highs to deep lows.
+  </p>
+  <p>
+    <a href="https://en.wikipedia.org/wiki/Mental_health" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Learn more
+    </a>
+  </p>
+</div>
+</div>
+
+  </div>
+</div>
+
+
+<div class="py-vh-5 w-100 overflow-hidden" id="aboutus">
+  <div class="container">
+      <div class="row d-flex justify-content-end">
+<div class="col-lg-8" data-aos="fade-down"><h2 class="display-6">Mental health support should be simple, accessible, and judgment free. Here’s how we help :</h2></div>
+</div>
+<div class="row d-flex align-items-center">
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+  <span class="h5 fw-lighter">01.</span>
+  <h3 class="py-5 border-top border-dark">Chat Anytime, Anywhere</h3>
+  <p>Feeling overwhelmed, anxious, or just need to vent? Our chatbot is here for you 24/7 to listen, provide emotional support, and suggest self care tips.<br><br>No need to wait or feel alone just open a chat anytime, anywhere. It’s a safe space where you can express yourself without fear of judgment.</p>
+  <a href="/LoginPage/index.html" class="link-fancy"><strong>HopeBot</strong>
+  </a>
+</div>
+
+<div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400">
+  <span class="h5 fw-lighter">02.</span>
+  <h3 class="py-5 border-top border-dark">Smart Guidance When It Matters</h3>
+  <p>Sometimes, emotions can feel too heavy to handle alone. Our chatbot doesn’t just listen it understands. If it detects that you may need <strong>more support</strong>, it will gently guide you to helpful resources or suggest reaching out to a professional. It ensures you always get the right level of care when you need it most.</p>
+  <a href="/LoginPage/index.html" class="link-fancy"><strong>HopeBot</strong>
+  </a>
+</div>
+
+<div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600">
+  <span class="h5 fw-lighter">03.</span>
+  <h3 class="py-5 border-top border-dark">You’re Never Alone</h3>
+  <p>Mental health struggles can feel isolating, but help is always within reach. Whether it’s talking to someone you trust, following self care routines, or seeking urgent crisis support, you are not alone. No matter where you are in your journey, there is always support available.
+  </p>
+  <a href="/LoginPage/index.html" class="link-fancy"><strong>HopeBot</strong>
+  </a>
+</div>
+</div>
+
+  </div>
+</div>
+
+<div class="position-relative overflow-hidden w-100 bg-light" id="gallery">
+  <div class="container-fluid">
+  <div class="row overflow-scroll">
+    <div class="col-12">
+      <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
+        <div class="col-md-2" data-aos="fade-up">
+            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <img src="img/Images/WhatsApp Image 2025-02-28 at 13.24.37.jpeg" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
+            <img src="img/Images/WhatsApp Image 2025-02-28 at 13.24.03.jpeg" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+
+</div>
+
+
+<div class="container py-vh-4 w-100 overflow-hidden">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-5">
+  <h3 class="py-5 border-top border-dark" data-aos="fade-right">Accessible Mental Health, Powered by Innovation : HopeBot</h3>
+</div>
+<div class="col-md-7" data-aos="fade-left">
+  <blockquote>
+    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“HopeBot, leverages AI and NLP to provide accessible, 24/7 mental health support. We offer personalized conversations and resources, breaking down stigma and location barriers. Our goal : to empower individuals and create a scalable lifeline for mental wellness.”</div>
+    <img src="img/HopeBot_Logo-3.png" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
+    <span><span class="fw-bold">HopeBot,</span>
+    HopeBot Developers.</span>
+  </blockquote>
+</div>
+
+  </div>
+</div>
+
+<!-- 
+<div class="bg-light w-100 overflow-hidden" id="testimonials">
+  <div class="container py-vh-6">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8 text-center">
+  <h2 class="display-6">Loved by People Across India</h2>
+  <p class="lead">Mental health support should be accessible, compassionate, and effective. Hear from people who found hope and healing with us!</p>
+</div>
+<div class="col-12 mt-4">
+  <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+
+    <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+      <div class="card p-4 mt-3 border-0">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"I was going through a tough time with anxiety, and this platform helped me feel heard. The chatbot is a great first step if you’re afraid to talk to someone. It made me realize I’m not alone."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <div>
+              <span class="h6 fw-5">Aarav Sharma</span><br>
+              <small class="text-muted">Software Engineer</small>
+            </div>
+            <img src="img/webp/person9.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-down">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"The service is excellent, but I wish there were more language options. My mother wanted to use it, but she prefers Hindi. Still, the support I got was amazing!"</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Neha Joshi</span><br>
+              <small class="text-muted">Homemaker</small>
+            </p>
+            <img src="img/webp/person3.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 mt-3 border-0" data-aos="fade-left">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"The idea is great, but I found the chatbot responses too generic. I was hoping for more personalized support. Also, some of the resources could be in more Indian languages. It’s a good start, but there’s room for improvement."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Manish Gupta</span><br>
+              <small class="text-muted">Accountant</small>
+            </p>
+            <img src="img/webp/person8.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 mt-3 border-0" data-aos="fade-right">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"At first, I wasn’t sure if online mental health support would work. But after using the chatbot and reading the resources, I finally booked my first therapy session. It really changed my perspective."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Pooja Iyer</span><br>
+              <small class="text-muted">Marketing Executive</small>
+            </p>
+            <img src="img/webp/person14.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 mt-3 border-0" data-aos="fade-up">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"The service is excellent, but I wish there were more language options. My mother wanted to use it, but she prefers Hindi. Still, the support I got was amazing!"</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Neha Joshi</span><br>
+              <small class="text-muted">Homemaker</small>
+            </p>
+            <img src="img/webp/person13.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-left">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+</div>
+          <blockquote class="blockquote">
+            <p>"The best part is that I can access help anytime. At 2 AM, when I had a panic attack, the chatbot guided me through calming exercises. That moment alone was worth five stars!"</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Vikram Nair</span><br>
+              <small class="text-muted">Freelancer</small>
+            </p>
+            <img src="img/webp/person18.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div> -->
+
+<div class="bg-light w-100 overflow-hidden" id="testimonials">
+  <div class="container py-vh-6">
+      <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 text-center">
+              <h2 class="display-6">Our Dedicated Team: Supporting Your Mental Well-being</h2>
+              <p class="lead">We're committed to providing compassionate mental health support. Discover the professionals who are making a real difference in people's lives.</p>
+          </div>
+          <div class="col-12 mt-4">
+              <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+
+                  <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+                      <div class="card p-4 mt-3 border-0">
+                          <div class="card-body">
+                              <div class="text-center py-2">
+                                  <img src="img/Images/Ritesh_000.jpeg" class="img-fluid" alt="Testimonial Image 1">
+                                  <br>
+                                  <br>
+                              </div>
+                              <!-- <blockquote class="blockquote">
+                                  <p>"I was going through a tough time with anxiety, and this platform helped me feel heard. The chatbot is a great first step if you’re afraid to talk to someone. It made me realize I’m not alone."</p>
+                              </blockquote> -->
+                              <div class="d-flex justify-content-between border-top pt-3">
+                                  <div>
+                                      <span class="h6 fw-5">Ritesh Rajpurohit</span><br>
+                                      <small class="text-muted">UI/UX</small>
+                                  </div>
+                                  <a href="https://www.linkedin.com/in/ritesh-rajpurohit-8aa27932b/"><img src="img/Images/Linkedin.png" width="48" height="48" class="rounded-circle" alt="Kajal Kiran"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 col-xl-4">
+                      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-down">
+                          <div class="card-body">
+                              <div class="text-center py-2">
+                                  <img src="img/Images/Kajal copy.jpeg" class="img-fluid" alt="Testimonial Image 2">
+                                  <br>
+                                  <br>
+                              </div>
+                              <!-- <blockquote class="blockquote">
+                                  <p>"The service is excellent, but I wish there were more language options. My mother wanted to use it, but she prefers Hindi. Still, the support I got was amazing!"</p>
+                              </blockquote> -->
+                              <div class="d-flex justify-content-between border-top pt-3">
+                                  <p class="card-text">
+                                      <span class="h6 fw-5">Kajal Kiran</span><br>
+                                      <small class="text-muted">Developers</small>
+                                  </p>
+                                  <a href="#"><img src="img/Images/Linkedin.png" width="48" height="48" class="rounded-circle" alt="Ritesh Kumar"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 col-xl-4">
+                      <div class="card p-4 mt-3 border-0" data-aos="fade-left">
+                          <div class="card-body">
+                              <div class="text-center py-2">
+                                  <img src="img/Images/Babli copy.jpeg" class="img-fluid" alt="Testimonial Image 3">
+                                  <br>
+                                  <br>
+                              </div>
+                              <!-- <blockquote class="blockquote">
+                                  <p>"The idea is great, but I found the chatbot responses too generic. I was hoping for more personalized support. Also, some of the resources could be in more Indian languages. It’s a good start, but there’s room for improvement."</p>
+                              </blockquote> -->
+                              <div class="d-flex justify-content-between border-top pt-3">
+                                  <p class="card-text">
+                                      <span class="h6 fw-5">Babli Dasgupta</span><br>
+                                      <small class="text-muted">Researcher</small>
+                                  </p>
+                                  <a href="https://www.linkedin.com/in/babli-das-gupta-9a696a347/"><img src="img/Images/Linkedin.png" width="48" height="48" class="rounded-circle" alt="Babli Dasgupta"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- <div class="col-12 col-lg-6 col-xl-4">
+                      <div class="card p-4 mt-3 border-0" data-aos="fade-right">
+                          <div class="card-body">
+                              <div class="text-center py-2">
+                                  <img src="img/Images/Avinah copy.jpeg" class="img-fluid" alt="Testimonial Image 4">
+                                  <br>
+                                  <br>
+                              </div> -->
+                              <!-- <blockquote class="blockquote">
+                                  <p>"At first, I wasn’t sure if online mental health support would work. But after using the chatbot and reading the resources, I finally booked my first therapy session. It really changed my perspective."</p>
+                              </blockquote> -->
+                              <!-- <div class="d-flex justify-content-between border-top pt-3">
+                                  <p class="card-text">
+                                      <span class="h6 fw-5">Avinash Prasad Sinha</span><br>
+                                      <small class="text-muted">Developers</small>
+                                  </p>
+                                  <a href="https://www.linkedin.com/in/avinash-sinha-8b4442324/"><img src="img/Images/Linkedin.png" width="48" height="48" class="rounded-circle" alt="Pooja Iyer"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div> -->
+
+                  <!-- <div class="col-12 col-lg-6 col-xl-4">
+                      <div class="card p-4 mt-3 border-0" data-aos="fade-up">
+                          <div class="card-body">
+                              <div class="text-center py-2">
+                                  <img src="img/Images/Shalu.jpeg" class="img-fluid" alt="Testimonial Image 5">
+                                  <br>
+                                  <br>
+                              </div> -->
+                              <!-- <blockquote class="blockquote">
+                                  <p>"The service is excellent, but I wish there were more language options. My mother wanted to use it, but she prefers Hindi. Still, the support I got was amazing!"</p>
+                              </blockquote> -->
+                              <!-- <div class="d-flex justify-content-between border-top pt-3">
+                                  <p class="card-text">
+                                      <span class="h6 fw-5">Shalu</span><br>
+                                      <small class="text-muted">Software Engineer</small>
+                                  </p>
+                                  <a href="https://www.linkedin.com/in/shalu-3240a3353/"><img src="img/Images/Linkedin.png" width="48" height="48" class="rounded-circle" alt="Neha Joshi"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div> -->
+                  <div class="col-12 col-lg-6 col-xl-4">
+                      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-left">
+                          <div class="card-body">
+                              <div class="text-center py-2">
+                                  <img src="img/Images/Shalu.jpeg" class="img-fluid" alt="Testimonial Image 6">
+                                  <br>
+                                  <br>
+                              </div>
+                              <!-- <blockquote class="blockquote">
+                                  <p>"The best part is that I can access help anytime. At 2 AM, when I had a panic attack, the chatbot guided me through calming exercises. That moment alone was worth five stars!"</p>
+                              </blockquote> -->
+                              <div class="d-flex justify-content-between border-top pt-3">
+                                  <p class="card-text">
+                                      <span class="h6 fw-5">Shalu</span><br>
+                                      <small class="text-muted">Designer</small>
+                                  </p>
+                                  <a href="https://www.linkedin.com/in/shalu-3240a3353/"><img src="img/Images/Linkedin.png" width="48" height="48" class="rounded-circle" alt="Shalu"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center text-center">
+  <div class="col-lg-8 text-center" data-aos="fade">
+        <p class="text-secondary lead">We're Here to Help (But Let's Be Real)</p>
+    <h2 class="display-6 mb-5">We don't have a contact form. Instead, we've built helpful Resources, FAQ, Blog. Find answers and tools faster than waiting for a reply. For emergencies, call your local services or a crisis hotline. We don't provide emergency support. We want to help you to  find the support you need.</h2>
+  </div>
+  <div class="col-12">
+    <a href="#" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down">Coming Soon</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="small py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-box-seam" viewbox="0 0 16 16">
+        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Your Support, Delivered Digitally.</h3>
+      <p>While we don't deliver physical products, we deliver something far more valuable: instant access to mental health resources. Our platform provides 24/7 support, accessible from anywhere, anytime. Consider it your digital delivery of well-being.</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="200">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-checklist" viewbox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Verified and Valuable Resources.</h3>
+      <p>We understand the importance of reliable information. That's why our resources are curated by experts and reviewed for accuracy. While we can't 'independently check' your feelings, we can guarantee that our information is sound.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-window-sidebar" viewbox="0 0 16 16">
+        <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Direct Digital Support.</h3>
+      <p>Forget filling out forms and waiting for replies. Our chatbot provides instant, personalized support through direct chat. No PDFs, no fax numbers, just a simple conversation to help you through your day.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200">
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 col-lg-8 text-center">
+      <h3 class="fs-2 fw-light">Get tips & mental health<span class="fw-bold">
+        support in your inbox.</span>
+        newsletter!
+    </h3></div>
+    <div class="col-12 col-lg-8 text-center">
+      <div class="row">
+        <div class="grouped-inputs border bg-light p-2">
+  <div class="row">
+    <div class="col">
+      <form class="form-floating">
+        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </form>
+    </div>
+    <div class="col-auto">
+      <a href="#" class="btn btn-dark py-3 px-5">Subscribe</a>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <img src="img/HopeBot_Logo-3.png" alt="Description of your photo" width="24" height="24">
+  <address class="text-secondary mt-3">
+    <strong>HopeBot</strong><br>
+    IILM University<br>
+    Greater Noida, <br> Uttar Pradesh, India<br>
+    <abbr title="Phone">Phone :</abbr>
+    +91 9256467069
+  </address>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">HopeBot</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <p>We're here to support your mental well-being.</p>
+      <!-- <a class="nav-link link-secondary ps-0" aria-current="page" href="#">We're here to support your mental well-being.</a> -->
+    </li>
+    <li class="nav-item">
+      <p>Access our resources and support anytime, anywhere.</p>
+      <!-- <a class="nav-link link-secondary ps-0" href="#">Access our resources and support anytime, anywhere.</a> -->
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Sed odio cras</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Commodo tortor ac</a>
+    </li> -->
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Support</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Mental Health Resources</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Community Forum</a>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Tortor mauris</a>
+    </li> -->
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">FAQ & Help Center</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Crisis Support</a>
+    </li>
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 p-5">
+  <h3 class="h6 mb-3">Company</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="#hero">Our Mission</a>
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="#testimonials">Our Team</a>
+            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Privacy Policy</a>
+            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Terms of Service</a>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+<div class="container text-center py-3 small">© 2025 HopeBot. All Rights Reserved.
+</div>
+</footer>
+
+    <script src="bootstrap.bundle.min_un.js"></script>
+<script src="aos_un.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+  </script>
+
+  </body>
+</html>
