@@ -10,67 +10,11 @@ const settingsBtn = document.getElementById('settingsBtn');
 const chatHistoryList = document.querySelector('.chat-history');
 const emptyPlaceholder = document.getElementById('emptyChatPlaceholder');
 
-// const ai = {
-//     useChat: (options) => {
-//         const messages = [];
-//         let input = '';
-//         const apiKey = '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'; // Your provided API key
-
-//         const handleInputChange = (e) => {
-//             input = e.target.value;
-//         };
-
-//         const handleSubmit = async (e) => {
-//             e.preventDefault();
-//             const prompt = `You are a friendly and supportive chatbot specializing in mental health.  If a question is not related to mental health, respond with "I can only answer questions about mental health."  Remember, you are not a therapist and cannot give medical advice.User: ${userMessage}`;
-//             try {
-//                 const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-//                     method: "POST",
-//                     headers: {
-//                         "Authorization": `Bearer ${apiKey}`,
-//                         "HTTP-Referer": "<YOUR_SITE_URL>", // Optional. Replace with your site URL if you have one
-//                         "X-Title": "<YOUR_SITE_NAME>", // Optional. Replace with your site name if you have one
-//                         "Content-Type": "application/json"
-//                     },
-//                     body: JSON.stringify({
-//                         "model": "google/gemma-2-9b-it:free",
-//                         "messages": [
-//                             {
-//                                 "role": "user",
-//                                 "content": input
-//                             }
-//                         ]
-//                     })
-//                 });
-
-//                 if (!response.ok) {
-//                     throw new Error(`HTTP error! status: ${response.status}`);
-//                 }
-
-//                 const data = await response.json();
-//                 const aiResponseContent = data.choices[0].message.content;
-//                 return { content: aiResponseContent };
-
-//             } catch (error) {
-//                 console.error("Fetch error:", error);
-//                 return { content: 'Error fetching AI response.' };
-//             }
-//         };
-
-//         return {
-//             messages,
-//             input,
-//             handleInputChange,
-//             handleSubmit
-//         };
-//     }
-// };
-
 const ai = {
     useChat: (options) => {
         const messages = [];
         let input = '';
-        const apiKey = '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'; // Replace with your actual API key (or better, use server-side)
+        const apiKey = '#'; // Replace with your actual API key
 
         const handleInputChange = (e) => {
             input = e.target.value;
@@ -188,7 +132,7 @@ const ai = {
 
 const { useChat } = ai;
 const chat = useChat({
-    // api: '/api/chat', // Removed api option as it's not used now
+    // api: '/api/chat', 
 });
 
 const { input, handleInputChange, handleSubmit } = chat;
