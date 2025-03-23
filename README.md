@@ -20,7 +20,7 @@ HopeBot is a web-based chatbot application designed to provide supportive and in
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/HopeBot.git
+   git clone https://github.com/dev-ritesh-09/HopeBot.git
    ```
 2. Navigate to the project directory:
    ```sh
